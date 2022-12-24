@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
-
 import ComponenteContainer from './components/pages/ComponenteContainer/ComponenteContainer'
 import { Titulo } from './components/Titulo/Titulo'
+import ItemListContainer from './components/pages/ItemListContainer/ItemListContainer'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css' 
+import NavBar from './components/pages/NavBar/NavBar'
 
 
 
@@ -11,14 +13,10 @@ function App() {
    
 
   return (
-    
-      <>
-        
-        <ComponenteContainer 
 
-        greeting={'saludo'}
-        Titulo = {Titulo}
-        />
+      <>
+        <NavBar/>
+         <ItemListContainer saludo={'saludo'} />              
 
       </>
   )
